@@ -29,7 +29,15 @@
                 const limitesuperior = Number(textosuperior)
 
                 const numeroAleatorio = Math.random();
-            }
+
+                const quantidadeNumeros = limiteSuperior - LimiteInferior + 1;
+            const resultadoMultiplicacao = numeroAleatorio * quantidadeNumeros;
+            const numeroSorteado = Math.floor(resultadoMultiplicacao) + limiteInferior;
+            document.getElementById("resultado").textContent = 
+                                                    "Número Sorteado: " + numeroSorteado;    
+        
+        }
+        
         </script>
     </main>
 </body>
