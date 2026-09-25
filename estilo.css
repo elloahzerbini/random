@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <!-- Ligação com o arquivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora de Média</h1>
+        <p>Informe as três notas do aluno:</p>
+        <label for="nota1">Primeira nota:</label>
+        <input type="number" id="nota1" min="0" max="10" step="0.1">
+        <br><br>
+        <label for="nota2">Segunda nota:</label>
+        <input type="number" id="nota2" min="0" max="10" step="0.1">
+        <br><br>
+        <label for="nota3">Terceira nota:</label>
+        <input type="number" id="nota3" min="0" max="10" step="0.1">
+        <br><br>
+        <!-- Ao clicar no botão, a função calcularMedia será executada -->
+        <button onclick="calcularMedia()">Calcular Média</button>
+        <!-- Local onde o JavaScript apresentará o resultado -->
+        <p id="resultado">O resultado aparecerá aqui!</p>
+    </main>
+</body>
+
+
+estilo.css
+/* Formatação geral da página */
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+
+/* Caixa principal da aplicação */
+main {
+    background-color: white;
+    width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+
+/* Título principal */
+h1 {
+    color: #1d4e89;
+    text-align: center;
+}
+
+
+/* Textos dos campos */
+label {
+    font-weight: bold;
+}
+
+
+/* Campos utilizados para digitar as notas */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Botão para calcular a média */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1d4e89;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Alteração da cor quando o mouse passa sobre o botão */
+button:hover {
+    background-color: #163a66;
+}
+
+
+/* Área onde será mostrado o resultado */
+#resultado {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #e8f1fa;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
